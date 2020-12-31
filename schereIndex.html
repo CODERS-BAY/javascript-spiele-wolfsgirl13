@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manuela´s Playground, Schere, Stein, ..</title>
+    <meta name="Playing Games" content="SEO-Beschreibung">
+    <meta name=”robots” content=”noindex, nofollow”>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <nav>
+                    <h3>Manuela´s <br>Playground</h3>
+                    <ul class="nav-links">
+                        <li><a href="playHome.html">Home</a></li>
+                        <li><a href class="active" href="schereIndex.html">Schere<br>Stein ...</a></li>
+                        <li><a href="handyIndex.html">Handy<br>werfen</a></li>
+                        <li><a href="zahlenRatenIndex.html">Zahlen<br>raten</a></li>
+                        <li><a href="codeBreaker.html">Code<br>Breaker</a></li>
+
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="screen1" class="screen">
+            <div class="user">
+                <h1 align="center">Schere, Stein, Papier</h1>
+                <div id="erklärung">
+                    Wähle ein Symbol, indem du darauf klickst. Danach wählt der PC ein Symbol. <br>Sind die Symbole
+                    gleich,
+                    steht diese Partie unentschieden, ansonsten:
+                    <ul class="rules">
+                        <li>Schere schneidet Papier - Schere gewinnt</li>
+                        <li>Stein schlägt Schere - Stein gewinnt</li>
+                        <li>Stein gegen Papier - Papier gewinnt</li>
+                    </ul>
+                    <p>Viel Spaß!</p>
+                </div>
+            </div>
+
+            <h4>Bitte triff Deine Wahl, indem Du auf ein Symbol deiner Wahl klickst:</h4>
+
+            <div id="symbols">
+                <!-- 1 ist ein Parameter den ich im Funktionsaufruf mitgebe -->
+                <!-- diesen hole ich mir als Variable in der Javascriptfunktion -->
+                <img src="img/schereStein/symbol1.jpg" alt="Schere" onclick="play(1)" />
+                <img src="img/schereStein/symbol2.jpg" alt="Stein" onclick="play(2)" />
+                <img src="img/schereStein//symbol3.jpg" alt="Papier" onclick="play(3)" />
+            </div>
+            <hr>
+            <div id="choice">
+                <p>Deine Wahl:</p>
+                <img id="userChoiceImg" src="img/schereStein/muster.jpeg">
+                <p>Wahl des PC´s</p>
+                <img id="pcChoiceImg" src="img/schereStein/muster.jpeg">
+            </div>
+            <div id="win">
+                <h3 id="output"></h3>
+                <p><span id="winCondition"></span></p>
+            </div>
+        </div>
+
+        <div id="screen2" class="screen hidden">
+            <h3 id="winOrLoose"></h3>
+            <button onclick="playAgain()">Nochmal spielen</button>
+
+            <a href="playHome.html">
+                <button nichtMehr="nichtMehr">Nicht mehr spielen</button>
+                <div id="popup" class="screen hidden"></div>
+        </div>
+    </main>
+
+    <footer>
+       
+        <div class="footer-bottom">
+            <p>&copy;2020 Manuela Spiegelfeld. designed by <span>Manuela Spiegelfeld</span></p>
+        </div>
+    </footer>
+
+    <script type="text/Javascript" src="js/lib.js"></script>
+    <script type="text/Javascript" src="js/app.js"></script>
+    <script type="text/Javascript" src="js/schereSkript.js"></script>
+
+</body>

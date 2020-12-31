@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Manuela´s Playground, Handyweitwurf</title>
+    <meta name="Playing Games" content="SEO-Beschreibung">
+    <meta name=”robots” content=”noindex, nofollow”>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    
+</head>
+<header>
+    <div class="container">
+        <div class="logo">
+            <nav>
+                <h3>Manuela´s <br>Playground</h3>
+                <ul class="nav-links">
+                    <li><a href="playHome.html">Home</a></li>
+                    <li><a href="schereIndex.html">Schere<br>Stein ...</a></li>
+                    <li><a href class="active" href="handyIndex.html">Handy<br>werfen</a></li>
+                    <li><a href="zahlenRatenIndex.html">Zahlen<br>raten</a></li>
+                    <li><a href="codeBreaker.html">Code<br>Breaker</a></li>
+
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div id="screen1" class="screen">
+
+        <div class="user">
+            <h1 align="center">Erschlage das Monster mit deinem Handy</h1>
+            <P id="erklärung">Du wählst einen Planeten aus, auf welchem du spielen möchtest.<br>
+                Dann gibst du die Geschwindigkeit und Winkel ein und schießt das Handy auf das Monster. </P>
+            <p><b>Viel Glück!</b></p>
+
+            <p>Wie oft möchtest Du spielen?</p>
+            <input type="number" id="counterInput" min="1" name="counter" />
+            <button onclick="addCounter()">OK</button>
+
+
+
+        </div>
+    </div>
+
+    <div id="screen2" class="screen hidden">
+        <!--Planeten wählen-->
+        <P>Wähle erst einen Planeten:</P>
+        <select id="planets">
+            <option value="9.81">Erde</option>
+            <option value="1.62">Mond</option>
+            <option value="3.96">Mars</option>
+            <option value="24.79">Jupiter</option>
+        </select>
+
+
+        <div class="container">
+            <p>Entfernung zum Monster in Meter:</p>
+            <p id="distanceToMonster">Meter</p>
+            <hr>
+            <p><b>Gib folgende Werte ein:</b></p>
+            <label for="speed">Wurfgeschwindigkeit in km/h:</label>
+            <input type="number" min="1" id="speed" placeholder="Wurfstärke">
+            <br>
+            <label for="angle">Wurfwinkel - Wert zwischen 1 und 90 Grad:</label>
+            <input type="number" min="1" id="angle" placeholder="Wurfwinkel">
+            <br>
+            <div id="shot">
+                <button onclick="play()">Schuss!</button>
+            </div>
+            <p id="throwingDistance"></p>
+            <div id="winOrLoose"></div>
+            <p id="counter"></p>
+
+            <div id="box">
+                <span class="ion-happy-outline"></span>
+                <h2>Du hast gewonnen!</h2>
+                <a class="close">Close</a>
+            </div>
+
+        </div>
+        <div class="playAgain">
+            <button onclick="playAgain()">Nochmal spielen</button>
+            <div href="playHome.html"></div>
+            <button nichtMehr="nichtMehr">Nicht mehr spielen</button>
+        </div>
+
+
+</main>
+
+<footer>
+   
+    <div class="footer-bottom">
+        <p>&copy;2020 Manuela Spiegelfeld. designed by <span>Manuela Spiegelfeld</span></p>
+    </div>
+</footer>
+
+<script type="text/Javascript" src="jQuery_File_mini.js"></script>
+<script type="text/Javascript" src="js/lib.js"></script>
+<script type="text/Javascript" src="js/app.js"></script>
+<script type="text/Javascript" src="js/handyScript.js"></script>
+<script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+</body>
+
+</html>

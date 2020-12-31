@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manuela´s Playground, Zahlen raten</title>
+    <meta name="Playing Games" content="SEO-Beschreibung">
+    <meta name=”robots” content=”noindex, nofollow”>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <nav>
+                    <h3>Manuela´s <br>Playground</h3>
+                    <ul class="nav-links">
+                        <li><a href="playHome.html">Home</a></li>
+                        <li><a href="schereIndex.html">Schere<br>Stein ...</a></li>
+                        <li><a href="handyIndex.html">Handy<br>werfen</a></li>
+                        <li><a href class="active" href="zahlenRatenIndex.html">Zahlen<br>raten</a></li>
+                        <li><a href="codeBreaker.html">Code<br>Breaker</a></li>
+
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <main>
+            <div>
+                <div id="screen1" class="screen">
+                    <h1>Zahlen raten</h1>
+                    <p style="font-size: 1.2em;">Errate die Zahl, welche sich der PC ausgedacht hat!</p>
+                    <p>Wie oft möchtest Du spielen?</p>
+                    <input type="number" id="counterInput" min="1" name="counter" />
+                    <button onclick="addCounter()">Weiter</button>
+                </div>
+
+                <div id="screen2" class="screen hidden">
+
+                    <div class="container">
+                        <p style="font-size: 1.4em;"><b>Gib eine Zahl von 1 bis 100 ein</b></p>
+                        <input type="number" min="1" id="guessNumber">
+
+                        <div id="shot">
+                            <button onclick="play()">Let´s play!</button>
+                        </div>
+
+                        <div id="win">
+                            <h3 id="output"></h3><br>
+                        </div>
+                        <div id="showCounter">
+                            <div id="counter">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="screen3" class="screen hidden">
+                        <h3 id="winOrLoose"></h3>
+                        <button onclick="playAgain()">Nochmal spielen</button>
+
+                        <a href="playHome.html"><button>Nicht mehr spielen</button>
+                            <div id="popup" class="screen hidden"></div>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            
+            <div class="footer-bottom">
+                <p>&copy;2020 Manuela Spiegelfeld. designed by <span>Manuela Spiegelfeld</span></p>
+            </div>
+        </footer>
+
+        <script type="text/Javascript" src="js/lib.js"></script>
+        <script type="text/Javascript" src="js/app.js"></script>
+        <script type="text/Javascript" src="js/zahlenRatenScript.js"></script>
+        <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+
+    </body>
+
+</html>

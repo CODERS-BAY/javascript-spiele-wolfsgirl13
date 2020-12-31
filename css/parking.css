@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#playHome {
+    background-color: yellow;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;    
+    min-height: 100vh;
+}
+
+.screen {
+    background-color: rgb(163, 63, 63);
+    box-shadow: 1px 1px 10px rgb(82, 16, 16);
+    padding: 80px;
+    text-align: center;
+}
+
+.box {
+    background-color: #ccc;
+    margin: 10px;
+    padding: 30px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+#popup {
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    width: 600px;
+}
+
+/* #inputField {
+    box-shadow: 1px 1px 10px rgb(44, 39, 39);
+    padding: 150px;
+    margin: center;
+    text-align: center; */
+
+#showCounter {
+    color: blue;
+    
+}
+.hidden {
+    display: none;
+}
+
+#popup {
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    width: 500px;
+}
+
+#button {
+    border: rgb(56, 54, 54);
+    background-color: #777;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.output {
+    float: left;
+    padding: 20px;
+    background-color:blue;
+
+}
+

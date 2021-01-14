@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navBar.css">
+    <link rel="stylesheet" type="text/css" href="css/codebreaker.css">
+    <title>Manuela´s Playground, CodeBreaker</title>
+    <meta name="Playing Games" content="SEO-Beschreibung">
+    <meta name=”robots” content=”noindex, nofollow”>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <nav>
+                    <h3>Manuela´s <br>Playground</h3>
+                    <ul class="nav-links">
+                        <li><a href="playHome.html">Home</a></li>
+                        <li><a href="schereIndex.html">Schere<br>Stein ...</a></li>
+                        <li><a href="handyIndex.html">Handy<br>werfen</a></li>
+                        <li><a href="zahlenRatenIndex.html">Zahlen<br>raten</a></li>
+                        <li><a href class="active" href="codeBreaker.html">Code<br>Breaker</a></li>
+
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <div id="screen1" class="screen">   
+        <h1>Codebreaker</h1>
+        <h4>Bist Du der geborene CodeBreaker?</h4>
+        <p><br>Du hast <b>12 Versuche</b>, den Code zu knacken!</p>
+        <p>Gib einen Tipp ab - Zahlen von 111 bis 999</p>
+        
+        <div class="numberUser">
+            <input id="numberUser1" placeholder="Hier deine Zahl 1">
+            <input id="numberUser2" placeholder="Hier deine Zahl 2">
+            <input id="numberUser3" placeholder="Hier deine Zahl 3">
+        </div>
+
+        <div class="output">
+            <p id="output1">-Deine Zahl 1- richtig oder falsch?</p>
+            <p id="output2">-Deine Zahl 2- richtig oder falsch?</p>
+            <p id="output3">-Deine Zahl 3- richtig oder falsch?</p>
+        </div>
+
+
+        <br>
+        <button onclick="play()">Knack den Code</button>
+
+        <p id="showCounter"></p>
+
+        <p id="result"></p>
+
+        <button onclick="playAgain()">Nochmal spielen</button>
+
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Manuela´s Playground</h3>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2020 Manuela Spiegelfeld. designed by <span>Manuela Spiegelfeld</span></p>
+        </div>
+    </footer>
+
+    <script type="text/Javascript" src="js/lib.js"></script>
+    <script type="text/Javascript" src="js/app.js"></script>
+    <script type="text/Javascript" src="js/codeBreaker.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
